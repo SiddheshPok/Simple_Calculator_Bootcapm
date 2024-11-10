@@ -98,6 +98,8 @@
             <button onclick="performOperation('sub')">Subtract</button>
             <button onclick="performOperation('mul')">Multiply</button>
             <button onclick="performOperation('div')">Divide</button>
+            <button onclick="performOperation('mod')">Modulus </button>
+            <button onclick="performOperation('expo')">Exponentiation </button>
         </div>
         <div id="result">Result: </div>
     </div>
@@ -124,6 +126,12 @@
                     break;
                 case "div":
                     result = num1 / num2;
+                    break;
+                case "mod":
+                    result = num1 % num2;
+                    break;
+                case "expo":
+                    result = Math.pow(num1, num2);
                     break;
                 default:
                     result = "Invalid Operation!";
